@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?=base_url();?>plantilla/css/estilo.css">
+    <link rel="stylesheet" href="<?=base_url()?>plantilla/css/estilo.css">
+    <link rel="stylesheet" href="<?=base_url()?>plantilla/css/main.css">
     <link rel="stylesheet" href="<?=base_url()?>plantilla/css/bootstrap.css">
     <link rel="stylesheet" href="<?=base_url()?>plantilla/css/animated.css">
     <link rel="stylesheet" href="<?=base_url()?>plantilla/css/jquery-ui.css">
@@ -18,10 +19,19 @@
     <title>AudiTeso</title>
   </head>
   <body>
+
+    <div class="social-bar">
+        <a href="https://www.facebook.com/DevCode.la" class="icon fab fa-facebook" target="_blank"></a>
+        <a href="https://twitter.com/DevCodela" class="icon fab fa-twitter" target="_blank"></a>
+        <a href="https://www.youtube.com/c/devcodela" class="icon fab fa-youtube" target="_blank"></a>
+        <a href="https://www.instagram.com/devcodela/" class="icon fab fa-instagram" target="_blank"></a>
+      </div>
+
+
     <header>
       <nav>
         <ul>
-          <li><a href="#"><span class="primero"><i class="icon fas fa-home"></i></span>Inicio</a></li>
+          <li><a href="<?=base_url()?>"><span class="primero"><i class="icon fas fa-home"></i></span>Inicio</a></li>
           <li><a href="#"><span class="segundo"><i class="icon fab fa-weixin"></i></span>Nosotros</a></li>
           <li><a href="#"><span class="tercero"><i class="icon fab fa-servicestack"></i></span>Servicio</a>
             <ul>

@@ -54,5 +54,5 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 
-//$route['inicia-sesion']     = 'principal';
+$route['login']     = 'principal/login';
 //$route['default_controller'] = 'principal';
