@@ -21,10 +21,10 @@
   <body>
 
     <div class="social-bar">
-        <a href="https://www.facebook.com/DevCode.la" class="icon fab fa-facebook" target="_blank"></a>
-        <a href="https://twitter.com/DevCodela" class="icon fab fa-twitter" target="_blank"></a>
-        <a href="https://www.youtube.com/c/devcodela" class="icon fab fa-youtube" target="_blank"></a>
-        <a href="https://www.instagram.com/devcodela/" class="icon fab fa-instagram" target="_blank"></a>
+        <a href="https://www.facebook.com/" class="icon fab fa-facebook" target="_blank"></a>
+        <a href="https://twitter.com/" class="icon fab fa-twitter" target="_blank"></a>
+        <a href="https://www.youtube.com/" class="icon fab fa-youtube" target="_blank"></a>
+        <a href="https://www.instagram.com/" class="icon fab fa-instagram" target="_blank"></a>
       </div>
 
 
