@@ -1,0 +1,127 @@
+* {
+  margin:0;
+  padding:0;
+}
+body{
+  background: rgba(254,255,222,0.4);
+}
+
+/*EN EL VIDEO HAY UN ERROR POR EL CUAL NO SE VISUALIZA EN GOOGLE CHROME,
+EL CÓDIGO A CONTINUACIÓN YA ESTA CORREGIDO*/
+
+header {
+  margin-top:10px;
+    width: 100%;
+    overflow: hidden;
+    height: 150px;
+    position: relative;
+}
+
+nav {
+    top:-20px;
+    position: fixed;
+    left:0;
+    right:0;
+    margin:20px auto;
+    /*max-width:1000px;
+    width:100%;*/
+}
+
+nav ul {
+  list-style:none;
+}
+
+nav > ul {
+  display:table;
+  /*Quitamos el overflow hidden que estaba aqui*/
+  width:100%;
+  background:#116814;
+  position:relative;
+}
+
+nav > ul li {
+  display:table-cell;
+}
+
+/*Sub-menu*/
+nav > ul > li:hover > ul {
+  display:block;
+  height:100%;
+}
+
+nav > ul > li > ul {
+  display:block;
+  position:absolute;
+  background:#2f8f00;
+  left:0;
+  right:0;
+  overflow:hidden;
+  height:0%;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+nav > ul li a {
+  color:#fff;
+  display:block;
+  line-height:20px;
+  padding:20px;
+  position: relative;
+  text-align:center;
+  text-decoration:none;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+nav > ul > li > ul > li a:hover {
+  background:#5da5a2;
+}
+
+nav > ul > li > a span {
+  background:#174459;
+  display:block;
+  height:100%;
+  width:100%;
+  left:0;
+  position:absolute;
+  top:-55px;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+nav > ul > li > a span .icon {
+  display:block;
+  line-height:60px;
+}
+
+nav > ul > li > a:hover > span {
+  top:0;
+}
+
+/*Colores*/
+nav ul li a .primero {
+  background: #000;
+}
+
+nav ul li a .segundo {
+  background:#C10000;
+}
+
+nav ul li a .tercero {
+  background:#f25724;
+}
+.contacto{
+  /*background-color: #d5e5d6;*/
+  background-color: #7a817d;
+  padding: 20px;
+  color: #dde0df;
+}
