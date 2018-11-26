@@ -8,4 +8,8 @@
     public function login(){
       $this->load->view('login');
     }
+
+    public function nosotros(){
+      $this->load->view('nosotros_view');
+    }
 }

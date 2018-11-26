@@ -26,13 +26,11 @@
         <a href="https://www.youtube.com/" class="icon fab fa-youtube" target="_blank"></a>
         <a href="https://www.instagram.com/" class="icon fab fa-instagram" target="_blank"></a>
       </div>
-
-
     <header>
       <nav>
         <ul>
           <li><a href="<?=base_url()?>"><span class="primero"><i class="icon fas fa-home"></i></span>Inicio</a></li>
-          <li><a href="#"><span class="segundo"><i class="icon fab fa-weixin"></i></span>Nosotros</a></li>
+          <li><a href="<?=base_url()?>nosotros"><span class="segundo"><i class="icon fab fa-weixin"></i></span>Nosotros</a></li>
           <li><a href="#"><span class="tercero"><i class="icon fab fa-servicestack"></i></span>Servicio</a>
             <ul>
               <li><a href="#">Auditoria</a></li>

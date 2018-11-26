@@ -55,4 +55,5 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 $route['login']     = 'principal/login';
+$route['nosotros'] = 'principal/nosotros';
 //$route['default_controller'] = 'principal';
