@@ -1,24 +1,73 @@
 <?php $this->load->view('header')?>
-
-
-<article class="container">
-  <h1 align="left">AudiTeso</h1> <br>
-  <h2 align="center">Bienvenidos</h2>
-  <p align="justify" style="color:brown; font-size:20px;">
-      AudiTeso Es Una Asociación De Profesionales Que Actualmente Brinda Servicios De Auditoría y Consultoría.
-    </p>
-  <p align="justify" style="font-size:20px">
-    Nuestra mayor satisfacción es el reconocimiento de nuestros clientes, de los que recibimos constantes muestras de fidelidad y confianza. Sabemos que ello sólo es posible gracias a un trato muy personal, a las ventajas de un eficaz modelo de trabajo, día a día perfeccionado, y a la dedicación y competencia técnica de cada miembro del equipo. En MGM permanecemos atentos a la evolución del mercado para adaptarnos en todo momento a los cambios y a las nuevas orientaciones. Sólo así podemos ofrecer a nuestros clientes un servicio integral y multidisciplinario que de respuesta precisa y eficaz a todas sus necesidades. Le agradecemos su visita y lo invitamos a conocer el entorno MGM que, como Socio-Director de la firma, me es grato poner a su disposición.
-  </p><br>
-  <b>Jessica</b><br>
-  Ing. en Sistemas Computacionales<br><br>
-  <b>Jordi</b><br>
-  Ing. en Sistemas Computacionales<br><br>
-  <b>Jonathan</b><br>
-  Ing. en Sistemas Computacionales<br><br>
-  <b>Jorge</b><br>
-  Ing. en Sistemas Computacionales
-
-</article>
+<section class="container" id=dashboard>
+	<!--Cards Main menu-->
+	<div class="row justify-content-center">
+		<div class="card-group shadow-sm p-2 mb-5 bg-white rounded">
+			<div class="card">
+	  			<img class="card-img-top img-fluid" src="content/themes/erp-cloud/images/nuevo-cliente.jpg" alt="Card image cap">
+	  			<div class="card-body">
+	    			<h6 class="card-title">Ultimos clientes registrados</h6>
+	    			<p class="card-text">Revisa que clientes se han registrado recientemente</p>
+	    			<button class="btn login">Ir Ahora</button>
+	  			</div>
+			</div>
+			<div class="card card">
+	  			<img class="card-img-top img-fluid" src="content/themes/erp-cloud/images/auditoria-curso.jpg" alt="Card image cap">
+	  			<div class="card-body">
+	    			<h6 class="card-title">Auditorias en curso</h6>
+	    			<p class="card-text">Revisa las auditorias en curso</p>
+	    			<button class="btn login">Ir Ahora</button>
+	  			</div>
+			</div>
+			<div class="card">
+	  			<img class="card-img-top img-fluid" src="content/themes/erp-cloud/images/completadasAud.jpg" alt="Card image cap">
+	  			<div class="card-body">
+	    			<h6 class="card-title">Auditorias finalizadas</h6>
+	    			<p class="card-text">Revisa las auditorias finalizadas</p>
+	    			<button class="btn login">Ir Ahora</button>
+	  			</div>
+			</div>
+		</div>
+	</div>
+	<!--panel chart-->
+	<div class="row justify-content-center shadow-sm p-2 mb-5 bg-white rounded">
+		<canvas id="chartDiv"></canvas>
+	</div>
+</section>
+<script type="text/javascript">
+	var myChart = new Chart($('#chartDiv'), {
+        type: 'bar',
+        data: {
+            labels: ["Agosto", "Septiembre", "octubre", "Noviembre", "Diciembre"],
+            datasets: [{
+                label: '# de auditorias al mes',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                	'rgba(255, 99, 132, 0.2)',
+                	'rgba(54, 162, 235, 0.2)',
+                	'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)'
+                ],
+                borderWidth: 1
+            }]},
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        });
+</script>
 
 <?php $this->load->view('footer')?>
